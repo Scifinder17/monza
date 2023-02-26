@@ -12027,8 +12027,14 @@ a {
 }
 .subscribe-btn:hover {
   border: 2px solid #f8f8f8;
+  padding: 16px 43px;
   background-color: transparent;
   color: #f8f8f8;
+}
+@media (max-width: 1264px) {
+  .subscribe-btn:hover {
+    padding: 16px 18px;
+  }
 }
 .subscribe-btn.btn.btn-primary:active {
   background-color: #f8f8f8;

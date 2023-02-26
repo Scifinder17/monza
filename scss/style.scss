@@ -466,8 +466,12 @@ a {
 
   &-btn:hover {
     border: 2px solid $primary-color;
+    padding: 16px 43px;
     background-color: transparent;
     color: $primary-color;
+    @media (max-width: 1264px) {
+      padding: 16px 18px;
+    }
   }
 
   &-btn.btn.btn-primary:active {
