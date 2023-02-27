@@ -11604,6 +11604,13 @@ a {
   padding-top: 20px;
 }
 
+.navbar-collapse.collapse.show .navbar-nav {
+  gap: 10px;
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
 .nav-item {
   font-weight: 500;
   color: #f8f8f8;
@@ -11798,7 +11805,7 @@ a {
 }
 .offer-btn:hover {
   background-color: #f8f8f8;
-  border: 2px solid #df4e3c;
+  border-color: #df4e3c;
   color: #df4e3c;
   font-size: 15px;
   line-height: 20px;
@@ -11810,31 +11817,6 @@ a {
 .btn-cars {
   width: 100%;
   max-width: 290px;
-}
-
-.blog__items {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.item-blog__header {
-  position: relative;
-}
-
-.item-blog__image {
-  display: block;
-  position: relative;
-  padding-bottom: 67%;
-}
-
-.item-blog__image img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
 }
 
 .card-body {
@@ -11854,26 +11836,20 @@ a {
   line-height: 75px;
 }
 
-.item-blog__body {
-  padding: 20px 20px 35px;
-}
-
-.item-blog__title {
+.card-title-car {
   font-size: 19px;
   line-height: 1.42;
   min-height: 54px;
 }
 
-.item-blog__title a {
+.card-title-car a {
   color: #000;
   text-decoration: none;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 400;
   font-size: 17px;
   line-height: 23px;
 }
 
-.item-blog__title span {
+.card-title-car span {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 17px;
@@ -11881,11 +11857,11 @@ a {
   color: #8d8d8d;
 }
 
-.item-blog__title:hover {
+.card-title-car:hover {
   text-decoration: underline;
 }
 
-.item-blog__title:not(:last-child) {
+.card-title-car:not(:last-child) {
   margin-bottom: 13px;
 }
 
@@ -11893,20 +11869,11 @@ a {
   margin-bottom: 21px;
 }
 
-.item-blog__link-title:hover {
+.card-link:hover {
   text-decoration: underline;
 }
 
-.item-blog {
-  background: #ffffff;
-  box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-.item-blog__category {
+.card-category {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -11922,7 +11889,6 @@ a {
 }
 
 .parameters {
-  font-family: "Noto Sans", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -11950,42 +11916,12 @@ a {
 }
 
 .price-car {
-  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 27px;
   color: #000;
 }
 
-@media (max-width: 1100px) {
-  .blog__items {
-    gap: 20px;
-  }
-  .item-blog__body {
-    padding: 25px 15px;
-  }
-}
-@media (max-width: 991.98px) {
-  .blog {
-    padding-top: 50px;
-    padding-bottom: 10px;
-  }
-  .blog__header {
-    margin-bottom: 44px;
-  }
-}
-@media (max-width: 767.98px) {
-  .blog {
-    padding-top: 30px;
-    padding-bottom: 50px;
-  }
-  .blog__header {
-    margin-bottom: 25px;
-  }
-  .blog__items {
-    grid-template-columns: auto;
-  }
-}
 .subscribe {
   background-color: #000;
   padding: 40px 0;
@@ -11998,18 +11934,9 @@ a {
   color: #f8f8f8;
 }
 .subscribe-title {
-  font-family: "Noto Sans", sans-serif;
   font-weight: 600;
   font-size: 25px;
   line-height: 34px;
-  color: #f8f8f8;
-}
-.subscribe-subtitle {
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  color: #f8f8f8;
 }
 .subscribe-btn {
   width: 100%;
